@@ -1,15 +1,28 @@
 {
-  "name": "k-tools",
-  "version": "0.0.1",
+  "name": "k-codes",
+  "version": "0.0.3",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "umd:main": "dist/index.umd.js",
   "description": "some js tools",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
   },
   "keywords": [
-    "awesome",
+    "k-codes",
     "package"
   ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "author": "kzwill",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.26.8",
+    "@babel/preset-env": "^7.26.8",
+    "rollup": "^2.79.2",
+    "rollup-plugin-babel": "^4.4.0"
+  }
 }
