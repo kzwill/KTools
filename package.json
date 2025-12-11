@@ -7,7 +7,8 @@
   "description": "some js tools",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "publish": "npm run build && npm version patch && npm publish"
   },
   "keywords": [
     "k-codes",
@@ -15,6 +16,7 @@
   ],
   "files": [
     "dist",
+    "test",
     "README.md"
   ],
   "author": "kzwill",
